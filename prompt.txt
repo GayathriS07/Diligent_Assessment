@@ -1,0 +1,140 @@
+Prompt:
+
+You are an expert full-stack web developer.
+Build a complete E-Commerce Website using the MERN stack (MongoDB, Express.js, React.js, Node.js) with clean and responsive design, organized folder structure, and professional-quality code.
+
+Overall Requirements:
+Users should be able to:
+
+Explore products (list view with images, price, and add-to-cart button)
+
+View detailed product information on a separate page
+
+Add items to a shopping cart
+
+View and remove items from the cart
+
+Use React.js (or Next.js) for the frontend.
+
+Use React Router for navigation (Home, Products, Product Details, Cart).
+
+Use Node.js with Express.js for backend APIs.
+
+Store and fetch data from MongoDB Atlas.
+
+Include basic state management using React Context API or Redux Toolkit for cart handling.
+
+Include responsive design (works on desktop and mobile).
+
+Apply modern and clean UI styling using Tailwind CSS or Material UI.
+
+Implement proper error handling, loading states, and API status feedback.
+
+Technical Expectations:
+Frontend (React.js):
+Folder structure:
+
+frontend/
+├── src/
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   ├── ProductCard.jsx
+│   │   ├── CartItem.jsx
+│   ├── pages/
+│   │   ├── Home.jsx
+│   │   ├── ProductDetails.jsx
+│   │   ├── Cart.jsx
+│   ├── context/
+│   │   └── CartContext.jsx
+│   ├── App.jsx
+│   ├── main.jsx
+│   ├── index.css
+├── package.json
+Pages:
+
+Home Page: Product list grid, Add to Cart buttons.
+
+Product Details Page: Shows full product info, Add to Cart button.
+
+Cart Page: Shows selected items, total price, and Remove button.
+
+Use React Router for navigation between pages.
+
+Use fetch/axios to get data from backend API.
+
+Apply Tailwind CSS for a modern, responsive look.
+
+Backend (Node.js + Express):
+Folder structure:
+
+backend/
+├── models/
+│   └── Product.js
+├── routes/
+│   └── productRoutes.js
+├── config/
+│   └── db.js
+├── server.js
+├── package.json
+API endpoints:
+
+GET /api/products → List all products
+
+GET /api/products/:id → Get details of a specific product
+
+POST /api/products → (Optional) Add a new product
+
+Use mongoose for MongoDB connection.
+
+Connect to MongoDB Atlas with .env for secure credentials.
+
+Database (MongoDB Atlas):
+Product fields:
+
+{
+  name: String,
+  description: String,
+  price: Number,
+  image: String,
+  category: String,
+  stock: Number
+}
+ UI Styling Expectations:
+Use Tailwind CSS or Material UI.
+
+Modern color scheme (white background, soft accent colors, card shadows).
+
+Responsive product grid with hover effects.
+
+Sticky Navbar with navigation links.
+
+Toast notifications on Add/Remove from cart.
+
+ Functional Expectations:
+Fully working shopping cart with add/remove functionality.
+
+Cart state should persist during navigation.
+
+Clean navigation using React Router.
+
+Error messages for invalid routes or failed API calls.
+
+Seed sample product data for demo.
+
+Artifacts to Include:
+Technical architecture documentation (README.md)
+
+Complete frontend and backend code base
+
+Prompts used to generate the code and documentation
+
+ Final Output Expected:
+A fully working and responsive e-commerce website running locally.
+
+Frontend: React + Tailwind + Router
+
+Backend: Node.js + Express.js
+
+Database: MongoDB Atlas
+
+Ready-to-deploy project with clear instructions in README.
